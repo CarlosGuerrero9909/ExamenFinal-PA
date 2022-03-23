@@ -1,0 +1,109 @@
+/* 2022-03-10 - Programa que integra tres paginas hechas con HTML, JavaScript y CSS para el Taller 7 de Programacion Avanzada. */
+/* Carlos Guerrero, Paola Cuellar y Nicolas Díaz */
+
+
+* {
+   box-sizing: border-box;
+   padding: 0;
+   margin: 0;
+   font-family: 'Roboto Mono', monospace;
+   color: #ccc;
+}
+
+body {
+   background-image: url(../imgData/fondo.jpg);
+   background-size: cover;
+}
+
+.header{
+   text-align: center;
+}
+
+.header img{
+   width: 10%;
+}
+
+.main{
+   text-align: center;
+   box-shadow: 1px 1px 10px #333;
+}
+
+.flex-container {
+   display: flex;
+   align-items: center;
+   flex-wrap: wrap;
+   justify-content: center;
+   background-color: rgba(22, 31, 33, 0.6);
+   margin: 50px 50px;
+   padding: 30px;
+
+}
+
+.form {
+   min-width: 400px;
+   flex: 1;
+   text-align: center;
+   padding: 30px;
+   order: 5;
+}
+
+.form__input{
+   width: 100%;
+   padding: 7px;
+   margin: 6px 0;
+   border: none;
+   border-bottom: 3px ridge #572975;
+   background-color: transparent;
+   color: white;
+}
+
+.form__input:focus{
+   background: linear-gradient(to bottom, transparent, #222);
+   background-color: mediumpurple;
+   outline: none;
+   border-bottom: 3px ridge #572975;
+}
+
+.img-container {
+   border: 4px ridge #572975;
+   flex: 1;
+   display: flex;
+   padding: 10px;
+   min-width: 300px;
+   min-height: 300px;
+}
+
+.img-container img {
+   width: 80%;
+   opacity: .5;
+   filter: alpha(opacity=40);
+   margin: auto;
+   border-radius: 0%;
+}
+
+input[type="submit"]{
+   background-color: purple;
+   box-shadow: 1px 1px 10px #230443;
+   border-bottom: none;
+   padding: 12px;
+}
+
+input[type="submit"]:hover{
+   background-color: blueviolet;
+   border-bottom: none;
+   padding: 12px;
+}
+
+input[type="submit"]:focus{
+   background-color: purple;
+   border-bottom: none;
+}
+
+input[type="submit"]:active{
+   background: linear-gradient(to bottom, blueviolet, darkmagenta);
+   border-bottom: none;
+}
+
+p {
+   color: #aaa;
+}

@@ -1,0 +1,154 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 22 mar. 2022, 19:26:27
+    Author     : Usuario
+*/
+
+html {
+   font-family: 'Roboto Mono', monospace;
+   font-size: 15px;
+   color: #ffffff;
+}
+
+body{
+   margin: 0%;
+   border: 0%;
+   background-color: #161F2E;
+   padding: 0% 0% 0% 0%;
+   background-image: url(../imgData/fondo.jpg);
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: cover;
+   background-attachment: fixed;
+}
+
+.header{
+   text-align: center;
+   width: 100%;
+   border-bottom: 3px ridge #aaa;
+}
+
+.header img{
+   width: 10%;
+}
+
+#contenedor-main-title{
+   font-family: 'Lobster', cursive;
+   font-size: 18px;
+   color: #ccc;
+   transition: box-shadow 0.5s ease;
+   border-width: 0.1rem;
+   border-radius: 0.7rem;
+   background-color: rgba(22, 31, 33, 0.6);
+   padding: 0% 0% 0% 0%;
+   margin: 1% 1% 0% 1%;
+   border: 0;
+   width: 98%;
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+}
+
+#contenedor-main-title #main-title{
+   text-align: center;
+   font-size: 200%;
+   padding: 0%;
+   margin: 0%;
+}
+
+#contenedor-contenedores{
+   display: flex;
+   flex-direction: row;
+}
+
+#contenedor-info-general{
+   transition: box-shadow 0.5s ease;
+   border-width: 0.1rem;
+   border-radius: 0.7rem;
+   padding: 1%;
+   margin: 1%;
+   border: 0;
+   width: 48%;
+   display: flex;
+   flex-direction: column;
+   background-color: rgba(22, 31, 33, 0.6);
+
+}
+
+#contenedor-info-general div{
+   padding: 1%;
+}
+
+#info-general h1{
+   font-size: 120%;
+   padding: 0%;
+   margin: 0%;
+
+}
+
+#info-general p{
+   text-align: justify;
+   padding: 3% 0%;
+   margin: 0%;
+}
+
+#imagen-info-general img{
+   background-color: #fff;
+   border-style: solid;
+   border-color: #fff;
+   border-radius: 10%;
+   padding: 0% ;
+   border: 0px;
+   margin: 2% 10%;
+   width: 80%;
+}
+
+#contenedor-opciones{
+   border-radius: 0.7rem;
+   transition: box-shadow 0.5s ease;
+   padding: 1%;
+   margin: 1%;
+   display: flex;
+   flex-direction: column ;
+   border: 0;
+   width: 48%;
+   height: 100%;
+   background-color: rgba(22, 31, 33, 0.6);
+}
+
+#contenedor-opciones p{
+   text-align: justify;
+}
+
+#contenedor-opciones h1{
+   font-size: 120%;
+   padding: 0%;
+   margin: 0%;
+}
+
+#contenedor-opciones:hover, #contenedor-info-general:hover, #contenedor-main-title:hover{
+   box-shadow: 1rem 1rem 3rem rgba(0,0,0,1);
+}
+
+.button-go{
+   background-color: #0C111A;
+   margin: 2% 2% 2% 2%;
+   padding: 2%;
+   border-style: solid;
+   border-width: 0.1rem;
+   border-color: #0C111A;
+   border-radius: 0.7rem;
+   width: 92%;
+   color: white;
+   font-size: 90%;
+   cursor: pointer;
+   text-align: center;
+}
+
+.button-go:hover {
+   box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+   transform: translateY(-2px);
+}

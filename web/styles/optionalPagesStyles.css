@@ -1,0 +1,127 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 21 mar. 2022, 12:09:50
+    Author     : Usuario
+*/
+* {
+   box-sizing: border-box;
+   padding: 0;
+   margin: 0;
+}
+
+body {
+   background-image: url(../imgData/fondo.jpg);
+   background-size: cover;
+   overflow-x: hidden;
+}
+
+.header{
+   text-align: center;
+   border-bottom: 3px ridge #aaa;
+}
+
+.header img{
+   width: 10%;
+}
+
+.main{
+   font-family: 'Lobster', cursive;
+   font-size: 18px;
+   color: #ccc;
+   text-align: center;
+   box-shadow: 1px 1px 10px #333;
+}
+
+.flex-container {
+   display: flex;
+   align-items: center;
+   flex-wrap: wrap;
+   justify-content: center;
+   margin: 50px 50px;
+   padding: 30px;
+   box-shadow: 10px 10px 10px #111;
+}
+
+.grid-container-horoscopo {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   grid-template-rows: repeat(2, 1fr);
+   grid-gap: 5px;
+   min-width: 400px;
+   flex: 1;
+   text-align: center;
+   padding: 30px;
+   order: 2;
+   border-left: 3px ridge #666;
+}
+
+.img-current-signo{
+   grid-column: 1/ 2;
+   width: 100px;
+   height: 100px;
+   filter: saturate(180%);
+   object-fit: cover;
+}
+
+.h2-descipcion{
+   text-align: center;
+   font-family: 'Roboto Mono', monospace;
+   font-size: 20px;
+   width: 300px;
+   margin: auto;
+   grid-column: 2/3;
+   color: #ccc;
+   padding: 10px;
+}
+
+.p-horoscopo {
+   text-align: justify;
+   font-family: 'Roboto Mono', monospace;
+   font-weight: bold;
+   margin: auto;
+   width: 300px;
+   grid-column: 1/span 2;
+   color: #bbb;
+   padding: 10px;
+}
+
+.grid-container-imgs{
+   display: grid;
+   grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+   grid-gap: 10px;
+   flex: 1;
+   padding: 10px;
+   min-width: 300px;
+   min-height: 300px;
+}
+
+.grid-container-imgs img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+
+.img-signo:hover{
+   transform: scale(1.15);
+   filter: saturate(180%);
+}
+
+.img-signo:active{
+   transform: scale(1.10);
+}
+
+
+@media screen and (max-width: 900px){
+   .header img{
+      width: 20%;
+   }
+
+   .grid-container-horoscopo {
+      border-left: none;
+      border-top: 3px ridge #666;
+   }
+
+}
