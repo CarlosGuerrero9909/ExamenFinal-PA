@@ -1,6 +1,6 @@
 <%-- 
-    Document   : horoscopoAño
-    Created on : 26/03/2022, 12:29:25 a. m.
+    Document   : horoscopoDia
+    Created on : 26/03/2022, 12:39:29 a. m.
     Author     : Usuario
 --%>
 
@@ -32,7 +32,7 @@
             correspondiente y de click. ¿Esta listo para leer lo que el universo te tiene preparado?</p>
          </div>
 
-         <form class="grid-container-imgs" action="../AñoServLetBD" method="post">
+         <form class="grid-container-imgs" action="DiaServLetBD" method="post">
             <input class="input-signo" id="img-acuario" type="submit" name="Enviar" value="acuario">
             <input class="input-signo" id="img-piscis" type="submit" name="Enviar" value="piscis">
             <input class="input-signo" id="img-cancer" type="submit" name="Enviar" value="cancer">

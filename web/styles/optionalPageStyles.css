@@ -3,9 +3,10 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to c
 Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
 */
 /* 
-    Created on : 21 mar. 2022, 12:09:50
+    Created on : 25/03/2022, 11:29:46 p. m.
     Author     : Usuario
 */
+
 * {
    box-sizing: border-box;
    padding: 0;
@@ -14,10 +15,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to ed
 
 body {
    background-image: url(../imgData/fondo.jpg);
-   background-repeat: no-repeat;
-   background-position: center center;
    background-size: cover;
-   background-attachment: fixed;
    overflow-x: hidden;
 }
 
@@ -48,47 +46,23 @@ body {
    box-shadow: 10px 10px 10px #111;
 }
 
-.grid-container-horoscopo {
-   display: grid;
-   grid-template-columns: repeat(2, 1fr);
-   grid-template-rows: repeat(2, 1fr);
-   grid-gap: 5px;
-   min-width: 400px;
+.container-descripcion {
+   min-width: 300px;
    flex: 1;
    text-align: center;
    padding: 30px;
    order: 2;
-   border-left: 3px ridge #666;
+   border: 3px ridge #666;
 }
 
-.img-current-signo{
-   grid-column: 1/ 2;
-   width: 100px;
-   height: 100px;
-   filter: saturate(180%);
-   object-fit: cover;
-}
-
-.h2-descipcion{
-   text-align: center;
-   font-family: 'Roboto Mono', monospace;
-   font-size: 20px;
-   width: 300px;
-   margin: auto;
-   grid-column: 2/3;
-   color: #ccc;
-   padding: 10px;
-}
-
-.p-horoscopo {
+.p-indicaciones {
    text-align: justify;
    font-family: 'Roboto Mono', monospace;
    font-weight: bold;
+   font-size: 20px;
    margin: auto;
    width: 300px;
-   grid-column: 1/span 2;
    color: #bbb;
-   padding: 10px;
 }
 
 .grid-container-imgs{
@@ -101,28 +75,80 @@ body {
    min-height: 300px;
 }
 
-.grid-container-imgs img {
-   width: 100%;
-   height: 100%;
-   object-fit: cover;
+.input-signo{
+   width: 100px;
+   height: 100px;
+   border: none;
+   cursor: pointer;
+   color: transparent;
+   background-color: transparent;
+   background-size: 100% 100%;
+   background-position: center;
 }
 
-.img-signo:hover{
+.input-signo:hover{
    transform: scale(1.15);
    filter: saturate(180%);
 }
 
-.img-signo:active{
+.input-signo:active{
    transform: scale(1.10);
 }
 
+#img-acuario{
+   background-image: url(../imgData/acuario.png);
+}
+
+#img-piscis{
+   background-image: url(../imgData/piscis.png);
+}
+
+#img-cancer{
+   background-image: url(../imgData/cancer.png);
+}
+
+#img-capricornio{
+   background-image: url(../imgData/capricornio.png);
+}
+
+#img-tauro{
+   background-image: url(../imgData/tauro.png);
+}
+
+#img-geminis{
+   background-image: url(../imgData/geminis.png);
+}
+
+#img-leo{
+   background-image: url(../imgData/leo.png);
+}
+
+#img-libra{
+   background-image: url(../imgData/libra.png);
+}
+
+#img-aries{
+   background-image: url(../imgData/aries.png);
+}
+
+#img-sagitario{
+   background-image: url(../imgData/sagitario.png);
+}
+
+#img-escorpio{
+   background-image: url(../imgData/escorpio.png);
+}
+
+#img-virgo{
+   background-image: url(../imgData/virgo.png);
+}
 
 @media screen and (max-width: 900px){
    .header img{
       width: 20%;
    }
 
-   .grid-container-horoscopo {
+   .grid-container-descripcion {
       border-left: none;
       border-top: 3px ridge #666;
    }
