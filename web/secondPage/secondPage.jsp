@@ -45,7 +45,7 @@
                <p>Se trata de un concepto que hace referencia a una predicción realizada según la posición de los astros en un determinado momento. El horóscopo, por lo tanto, es un método predictivo. La noción también se usa para nombrar al texto donde se plasman esos pronósticos y al gráfico que emplean los astrólogos para hacer un horóscopo de acuerdo a la representación del Zodíaco.</p>
 
                <div id="imagen-info-general">
-                  <img id="img-signos" src="../imgData/horoscopo.jpeg" >
+                  <img id="img-signos" src="../imgData/horoscopo.jpeg">
                </div>
             </div> 
          </div>
@@ -55,7 +55,7 @@
             <h1>Consultar Horóscopo</h1> 
             <p>A continuación podrás escoger el horóscopo que deseas ver.</p>
 
-            <a class="button-go" href="#">Ver los Horoscopos del Dia</a>
+            <a class="button-go" href="#">Ver los Horoscopos del Mes (segun fecha de nacimiento)</a>
 
             <a class="button-go" href="../optionalPages/horoscopoMes.jsp">Ver los Horoscopos del Mes</a>
 
